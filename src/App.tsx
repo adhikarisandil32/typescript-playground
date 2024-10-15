@@ -1,3 +1,4 @@
+import Text from "./components/text"
 import { CampaignDataType } from "./types/campaignData"
 
 function App() {
@@ -37,6 +38,15 @@ function App() {
   return (
     <div className="min-h-screen dark dark:bg-black dark:text-white">
       <div className="container">{JSON.stringify(campaignData)}</div>
+
+      <div className="text-center">
+        <Text
+          as="a"
+          href="https://sandiladhikari.com.np"
+        >
+          <span>My Text</span>
+        </Text>
+      </div>
     </div>
   )
 }
